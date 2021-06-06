@@ -1,0 +1,50 @@
+$primary: rgba(#CA1D20, 1);
+$secondary: rgba(#FEDFB0, 1);
+$light: rgba(#F5F5F5, 1);
+$dark: rgba(#05303A, 1);
+$gray: #F2F2F2;
+
+$primary-gradient: linear-gradient(87.34deg, #652E78 19.39%, #755CD6 64.77%);
+
+$base-font-family: 'Malgun Gothic Boot', sans-serif;
+$header-font-family: 'Malgun Gothic Boot', sans-serif;
+
+$base-font: 18px/150% $base-font-family;
+
+$h1-font: 700 56px/115% $header-font-family;
+$h1-font-sm: 500 32px/115% $header-font-family;
+
+$h2-font: 700 48px/115% $header-font-family;
+$h2-font-sm: 500 27px/115% $header-font-family;
+
+$h3-font: 700 36px/130% $header-font-family;
+$h3-font-sm: 500 24px/100% $header-font-family;
+
+$h4-font: 500 24px/130% $header-font-family;
+$h4-font-sm: 500 18px/100% $header-font-family;
+
+$h5-font: 500 20px/100% $header-font-family;
+$h5-font-sm: 500 18px/100% $header-font-family;
+
+$small-font: 500 14px/18px $base-font-family;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1290px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl:1260px
+);
+
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "mixins/scroll";

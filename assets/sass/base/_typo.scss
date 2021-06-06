@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/malgun-gothic-boot');
+
+body {
+  font: $base-font;
+  font-weight: 400;
+
+  @include media-breakpoint-down(md){
+    font: 16px/150% $base-font-family;
+  }
+}
+
+.h1, h1 {
+  //color: $secondary;
+  font: $h1-font;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h1-font-sm;
+  }
+}
+
+.h1_super {
+  //color: $secondary;
+  font-size: 56px;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h1-font-sm;
+  }
+}
+
+.h2, h2 {
+  //color: $secondary;
+  font: $h2-font;
+  margin-bottom: 1rem;
+
+  span {
+    color: $primary;
+  }
+
+  @include media-breakpoint-down(md) {
+    font: $h2-font-sm;
+  }
+}
+
+.h3, h3 {
+  //color: $secondary;
+  font: $h3-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h3-font-sm;
+  }
+}
+
+.h4, h4 {
+  //color: $secondary;
+  font: $h4-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h4-font-sm;
+  }
+}
+
+.h5, h5 {
+  //color: $secondary;
+  font: $h5-font;
+  margin-bottom: 0.5rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h5-font-sm;
+  }
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($secondary, 20%);
+    text-decoration: none;
+  }
+
+  &.active {
+    color: $primary;
+  }
+}
+
+p, .list-styled {
+  a {
+    border-bottom: 1px dashed orange;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+small, .small {
+  line-height: 1.1;
+  font: $small-font;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 0;
+
+  & + & {
+    margin-top: 15px;
+  }
+}
+
+.text-muted {
+  opacity: 0.6;
+  color: inherit !important;
+}

@@ -1,0 +1,19 @@
+@mixin styled-scroll {
+  padding-right: 5px;
+  @include media-breakpoint-up(lg) {
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $primary;
+      border-radius: 10px;
+    }
+  }
+}
