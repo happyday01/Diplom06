@@ -6,7 +6,7 @@
             </h2>
             <div class="row">
                 <div class="tojournal col-12 col-md-5">
-                    <a href="#"
+                    <a href="https://jc.surgu.ru/jour"
                        class="tojournal-link"
                     >
                         <img src="/images/to-journal.png">
@@ -230,8 +230,13 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="col-12 col-md-5">
-                    <img src="/images/to-cdio.png">
+                <div class="tojournal col-12 col-md-5">
+                    <a href="http://www.cdio.org/"
+                       class="tojournal-link"
+                    >
+                        <img src="/images/cdio.jpg">
+                        <span>Перейти на сайт</span>
+                    </a>
                 </div>
             </div>
             <p>
@@ -282,6 +287,7 @@ export default {
         bottom: 0;
         text-align: center;
         color: transparent;
+        font-size: 28px;
     }
 }
 .tojournal-link:hover{
@@ -292,5 +298,4 @@ export default {
         filter: brightness(.5);
     }
 }
-
 </style>

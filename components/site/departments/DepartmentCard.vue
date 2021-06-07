@@ -35,6 +35,7 @@ export default {
     background-size: cover;
     position: relative;
     border-radius: 7px;
+    font-size: 24px;
 
     &:hover {
       scale: 102%;
@@ -47,6 +48,8 @@ export default {
     margin-top: 60px;
     margin-right: 100px;
     color: white;
+    height: 27%;
+    padding: 1em;
 }
 
 .department-card__show {
@@ -55,7 +58,7 @@ export default {
     position: absolute;
     bottom: 60px;
     right: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
 }
 </style>
