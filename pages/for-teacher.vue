@@ -6,7 +6,12 @@
             </h2>
             <div class="row">
                 <div class="tojournal col-12 col-md-5">
-                    <img src="/images/to-journal.png">
+                    <a href="#"
+                       class="tojournal-link"
+                    >
+                        <img src="/images/to-journal.png">
+                        <span>Перейти на сайт</span>
+                    </a>
                 </div>
                 <div class="col-12 col-md-7">
                     <h3 class="h4">
@@ -267,9 +272,25 @@ export default {
 </script>
 
 <style scoped lang="scss">
-img {
-  &:hover {
-    background: rgba(black, 0.5);
-  }
+.tojournal-link{
+    position: relative;
+    span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: transparent;
+    }
 }
+.tojournal-link:hover{
+    span{
+        color: white;
+    }
+    img {
+        filter: brightness(.5);
+    }
+}
+
 </style>

@@ -15,7 +15,10 @@
                 <script>
                     (function (t, p) {
                     window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () {
-                    Marquiz.add([t, p])
+                    Marquiz.add([t, p]);
+                    let btn = document.querySelector('.marquiz__button');
+                    btn.style.borderRadius = '7px';
+                    btn.style.padding = '21px 95px';
                     })
                     })('Button', {
                     id: '608fbced19933d0049b80662',
@@ -40,8 +43,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .marquiz__container {
     text-align: left;
+}
+
+.marquiz__button-custom {
+    border-radius: 7px !important;
+    padding: 21px 95px !important;
 }
 </style>

@@ -8,6 +8,9 @@
                         Кликай на дни и просматривай фотографии выбранного дня.
                     </p>
                     <v-gallery-calendar @change="reloadImage" />
+                    <div class="mt-5">
+                        {{ d_currInfo }}
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6 text-right">
                     <img class="w-100"
@@ -25,11 +28,20 @@ export default {
     data() {
         return {
             d_image: 'https://picsum.photos/800/1000',
+            d_currInfo: 'Кликай на дни и просматривай фотографии выбранного дня.',
+            d_info: ['Кликай на дни и просматривай фотографии выбранного дня.',
+                'не Кликай на дни и просматривай фотографии выбранного дня.',
+                'нsdgsdfgКликай на дни и просматривай фотографии выбранного дня.',
+            ],
         };
     },
     methods: {
         reloadImage(val) {
             this.d_image = 'https://picsum.photos/800/1000?' + Math.random();
+            this.d_currInfo = this.d_info[this.getRandomInt(3)];
+        },
+        getRandomInt(max) {
+            return Math.floor(Math.random() * max);
         },
     },
 };

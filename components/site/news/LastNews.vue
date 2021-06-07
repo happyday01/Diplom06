@@ -8,13 +8,13 @@
                 />
                 <news-card />
                 <news-card />
-                <div class="text-right">
-                    <nuxt-link to="/news"
-                               class="link"
-                    >
-                        Больше новостей <i class="icon-right-open" />
-                    </nuxt-link>
-                </div>
+            </div>
+            <div class="text-right">
+                <nuxt-link to="/news"
+                           class="link"
+                >
+                    Больше новостей <i class="icon-right-open" />
+                </nuxt-link>
             </div>
         </div>
     </div>
@@ -47,6 +47,6 @@ export default {
 }
 
 .last-news__last {
-    grid-row: 1/4;
+    grid-row: 1/3;
 }
 </style>
