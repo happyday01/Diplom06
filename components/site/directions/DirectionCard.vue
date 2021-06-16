@@ -43,6 +43,7 @@ export default {
 }
 
 .direction-card__name {
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 0;

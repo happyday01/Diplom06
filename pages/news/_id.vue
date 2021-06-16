@@ -2,7 +2,8 @@
     <div class="container">
         <div class="news__header">
             <img class="news__image"
-                 src="/images/news-example.jpg"
+                 src="/images/main/news-example.jpg"
+                 alt=""
             >
             <div>
                 <h1 class="news__title">

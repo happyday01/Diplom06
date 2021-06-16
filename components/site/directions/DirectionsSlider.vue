@@ -8,30 +8,32 @@
 </template>
 
 <script>
+import DirectionCard from './DirectionCard';
 export default {
     name: 'DirectionsSlider',
+    components: { DirectionCard },
     data() {
         return {
             d_directions: [
                 {
                     id: 1,
-                    name: 'ИНФОКОММУНИКАЦИОННЫЕ ТЕХНОЛОГИИ И СИСТЕМЫ СВЯЗИ (ОЧНАЯ/ЗАОЧНАЯ)',
+                    name: 'Инфокоммуникационные технологии и системы связи (очная/заочная)',
                     image: {
-                        url: '/images/direction-example.jpg',
+                        url: '/images/applicants/direction-example.jpg',
                     },
                 },
                 {
                     id: 2,
-                    name: 'ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ТЕХНОЛОГИИ(ОЧНАЯ/ЗАОЧНАЯ)',
+                    name: 'Информационные системы и технологии(очная/заочная)',
                     image: {
-                        url: '/images/isit.png',
+                        url: '/images/applicants/isit.png',
                     },
                 },
                 {
                     id: 3,
-                    name: 'УПРАВЛЕНИЕ В ТЕХНИЧЕСКИХ СИСТЕМАХ(ОЧНАЯ/ЗАОЧНАЯ)',
+                    name: 'Управление в технических системах(очная/заочная)',
                     image: {
-                        url: '/images/uts.png',
+                        url: '/images/applicants/uts.png',
                     },
                 },
             ],

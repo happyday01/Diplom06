@@ -13,24 +13,34 @@
                 </p>
                 <div data-marquiz-id="608fbced19933d0049b80662" />
                 <script>
-                    (function (t, p) {
-                    window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () {
+                    (function(t, p) {
+                    window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {
                     Marquiz.add([t, p]);
-                    let btn = document.querySelector('.marquiz__button');
-                    btn.style.borderRadius = '7px';
-                    btn.style.padding = '21px 95px';
-                    })
+                    addStyleToBtn();
+                    });
                     })('Button', {
                     id: '608fbced19933d0049b80662',
                     buttonText: 'Пройти тест!',
                     bgColor: '#fedfb0',
                     textColor: '#000000',
-                    blicked: true
-                    })
+                    blicked: true,
+                    });
+
+                    function addStyleToBtn() {
+                    const btn = document.querySelector('.marquiz__button');
+                    btn.style.borderRadius = '7px';
+                    btn.style.padding = '21px 95px';
+                    }
+
+                    (function() {
+                    addStyleToBtn();
+                    }());
                 </script>
             </div>
             <div class="col-12 col-md-5">
-                <img src="/images/applicant.png">
+                <img src="/images/applicants/applicant.png"
+                     alt=""
+                >
             </div>
         </div>
     </div>

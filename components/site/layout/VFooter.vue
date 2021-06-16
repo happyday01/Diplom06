@@ -1,7 +1,9 @@
 <template>
     <footer class="footer">
         <div class="container footer__container">
-            <img src="/images/logo-primary.svg">
+            <img src="/images/footer/logo-primary.svg"
+                 alt=""
+            >
             <div>
                 <h4 class="font-weight-bold text-primary">
                     Меню
@@ -29,7 +31,7 @@
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/"
+                        <nuxt-link to="/for-teacher"
                                    class="footer__link"
                         >
                             Преподавателям

@@ -8,8 +8,10 @@
 </template>
 
 <script>
+import DepartmentCard from '../../components/site/departments/DepartmentCard';
 export default {
     name: 'Departments',
+    components: { DepartmentCard },
     data() {
         return {
             d_items: [
@@ -19,7 +21,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 24.jpg',
+                                url: '/images/departments/Frame 24.jpg',
                             },
                         ],
                     },
@@ -30,7 +32,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 25.jpg',
+                                url: '/images/departments/Frame 25.jpg',
                             },
                         ],
                     },
@@ -41,7 +43,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 26.jpg',
+                                url: '/images/departments/Frame 26.jpg',
                             },
                         ],
                     },
@@ -52,7 +54,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 27.jpg',
+                                url: '/images/departments/Frame 27.jpg',
                             },
                         ],
                     },
@@ -63,7 +65,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 28.jpg',
+                                url: '/images/departments/Frame 28.jpg',
                             },
                         ],
                     },
@@ -74,7 +76,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 29.jpg',
+                                url: '/images/departments/Frame 29.jpg',
                             },
                         ],
                     },
@@ -85,7 +87,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 30.jpg',
+                                url: '/images/departments/Frame 30.jpg',
                             },
                         ],
                     },
@@ -96,7 +98,7 @@ export default {
                     image: {
                         sizes: [
                             {
-                                url: '/images/Frame 31.jpg',
+                                url: '/images/departments/Frame 31.jpg',
                             },
                         ],
                     },

@@ -8,8 +8,10 @@
 </template>
 
 <script>
+import NewsCard from '../../components/site/news/NewsCard';
 export default {
     name: 'News',
+    components: { NewsCard },
 };
 </script>
 

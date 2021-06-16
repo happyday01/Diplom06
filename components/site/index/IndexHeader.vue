@@ -21,7 +21,8 @@ export default {
 
 <style scoped lang="scss">
 .index-header {
-    background: linear-gradient(to right, rgba(21, 10, 52, 0.41), transparent), url('/images/girl-student-with-laptop-standing-by-window-corridor.jpg') top right;
+    background: linear-gradient(to right, rgba(21, 10, 52, 0.41), transparent),
+    url('/images/main/girl-student-with-laptop-standing-by-window-corridor.jpg') top right;
     background-size: cover;
     color: white;
     padding: 150px 0;

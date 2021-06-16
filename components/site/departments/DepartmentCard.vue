@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "assets/sass/variables";
 .department-card {
     min-height: 400px;
     background-size: cover;
@@ -44,7 +45,6 @@ export default {
 
 .depart-card__name {
     background: $primary;
-    padding: 15px 50px;
     margin-top: 60px;
     margin-right: 100px;
     color: white;

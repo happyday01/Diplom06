@@ -23,8 +23,9 @@
         <department-schedule class="mb-5" />
         <department-schedule />
         <div class="prepodi">
-            </br>
-            <h3>Преподавательский состав каферды АиКС</h3>
+            <h3 class="mt-3">
+                Преподавательский состав каферды АиКС
+            </h3>
         </div>
         <div class="department__teachers mb-5">
             <teacher-card v-for="teacher in d_department.teachers"
@@ -36,8 +37,15 @@
 </template>
 
 <script>
+import DepartmentSchedule from '../../components/site/departments/DepartmentSchedule';
+import TeacherCard from '../../components/site/teachers/TeacherCard';
+
 export default {
     name: 'Department',
+    components: {
+        TeacherCard,
+        DepartmentSchedule,
+    },
     data() {
         return {
             d_department: {
@@ -59,7 +67,7 @@ export default {
                     'Тел.: +7 (3462) 76-31-25, +7 (3462) 76-31-26',
                 image: {
                     sizes: [{
-                        url: 'url("/images/department-example.jpg")',
+                        url: 'url("/images/departments/department-example.jpg")',
                     }],
                 },
                 teachers: [
@@ -71,7 +79,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },
@@ -83,7 +91,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },
@@ -95,7 +103,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },
@@ -107,7 +115,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },
@@ -119,7 +127,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },
@@ -131,7 +139,7 @@ export default {
                         position: 'Зав. кафедрой',
                         image: {
                             sizes: [{
-                                url: 'url("/images/petrov.png")',
+                                url: 'url("/images/departments/petrov.png")',
                             }],
                         },
                     },

@@ -26,8 +26,11 @@
                 <div>Пт.</div>
                 <div>Сб.</div>
                 <div>Вс.</div>
+                <div v-for="i in c_firstDayIdx"
+                     :key="i"
+                />
                 <div v-for="day in c_daysCount"
-                     :key="day"
+                     :key="c_firstDayIdx + day"
                      class="calendar__day"
                      :class="{ 'calendar__day_current' : day === d_date.date() }"
                      @click="d_date = d_date.set('date', day)"
@@ -44,10 +47,12 @@
 
 <script>
 import dayjs from 'dayjs';
+import weekday from 'dayjs/plugin/weekday';
+import weekOfYear from 'dayjs/plugin/weekOfYear';
 import ru from 'dayjs/locale/ru';
 
-const weekOfYear = require('dayjs/plugin/weekOfYear');
 dayjs.extend(weekOfYear);
+dayjs.extend(weekday);
 
 dayjs.locale(ru);
 
@@ -74,6 +79,9 @@ export default {
         },
         c_daysCount() {
             return this.d_date.daysInMonth();
+        },
+        c_firstDayIdx() {
+            return this.d_date.date(1).weekday();
         },
     },
     watch: {
@@ -138,6 +146,7 @@ export default {
 .calendar__month, .calendar__week, .calendar__date {
     text-align: center;
     font-size: 24px;
+    line-height: 58px;
 
     @include media-breakpoint-down(md) {
         font-size: 16px;
@@ -148,11 +157,13 @@ export default {
     margin: 0 15px;
 
 }
-.calendar__date{
-  font-size: 64px;
-  margin: 25px;
-  margin-top: -1px;
+
+.calendar__date {
+    font-size: 64px;
+    margin: 25px;
+    margin-top: -1px;
 }
+
 .calendar__date-wrap {
     background: $light;
     color: black;
@@ -162,7 +173,7 @@ export default {
     flex-direction: column;
     margin-left: -50px;
     position: relative;
-  font-size: 28px;
+    font-size: 28px;
     @include media-breakpoint-down(md) {
         margin-left: -25px;
     }
@@ -180,9 +191,11 @@ export default {
         z-index: -1;
     }
 }
-.text-center{
-  padding: 10px;
+
+.text-center {
+    padding: 10px;
 }
+
 .calendar__prev, .calendar__next {
     @include media-breakpoint-down(md) {
         font-size: 14px;

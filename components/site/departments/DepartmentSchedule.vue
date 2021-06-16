@@ -16,10 +16,11 @@
 
 <script>
 import Attachment from '@/components/common/AttachmentRow';
+import VTabs from '../../common/VTabs';
 
 export default {
     name: 'DepartmentSchedule',
-    components: { Attachment },
+    components: { VTabs, Attachment },
     data() {
         return {
             d_tab: 'Очная форма',

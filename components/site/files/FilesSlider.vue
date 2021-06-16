@@ -30,7 +30,7 @@ export default {
                     createdAt: new Date(),
                     sizes: [
                         {
-                            url: '/images/spiski1.jpg',
+                            url: '/images/applicants/spiski1.jpg',
                         },
                     ],
                 },
@@ -39,7 +39,7 @@ export default {
                     createdAt: new Date(),
                     sizes: [
                         {
-                            url: '/images/spiski2.jpg',
+                            url: '/images/applicants/spiski2.jpg',
                         },
                     ],
                 },
@@ -48,7 +48,7 @@ export default {
                     createdAt: new Date(),
                     sizes: [
                         {
-                            url: '/images/spiski1.jpg',
+                            url: '/images/applicants/spiski1.jpg',
                         },
                     ],
                 },
@@ -57,7 +57,7 @@ export default {
                     createdAt: new Date(),
                     sizes: [
                         {
-                            url: '/images/spiski2.jpg',
+                            url: '/images/applicants/spiski2.jpg',
                         },
                     ],
                 },

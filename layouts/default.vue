@@ -11,3 +11,10 @@
     padding-top: 100px;
 }
 </style>
+<script>
+import VNavbar from '../components/site/layout/VNavbar';
+import VFooter from '../components/site/layout/VFooter';
+export default {
+    components: { VFooter, VNavbar },
+};
+</script>

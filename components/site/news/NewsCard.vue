@@ -2,7 +2,8 @@
     <div class="news-card">
         <img v-if="showImage"
              class="news-card__image"
-             src="/images/news-example.jpg"
+             src="/images/main/news-example.jpg"
+             alt=""
         >
         <div class="news-card__text">
             <h5 class="font-weight-bold">
