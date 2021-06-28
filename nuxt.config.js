@@ -15,7 +15,7 @@ export default {
             },
             { 
                 rel: 'stylesheet', 
-                href 'https://fonts.cdnfonts.com/css/malgun-gothic-boot' 
+                href: 'https://fonts.cdnfonts.com/css/malgun-gothic-boot' 
             },
         ],
     },
