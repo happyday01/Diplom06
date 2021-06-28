@@ -159,6 +159,7 @@ export default {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 50px;
+    font-size: 24px;
 
     a {
         color: $dark;
