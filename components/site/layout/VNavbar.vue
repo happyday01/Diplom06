@@ -159,9 +159,9 @@ export default {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 50px;
+    font-size: 18px;
 
     a {
-        font-size: 18px;
         color: $dark;
 
         &:hover {
