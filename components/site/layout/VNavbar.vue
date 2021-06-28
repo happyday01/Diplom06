@@ -162,6 +162,7 @@ export default {
     font-size: 24px;
 
     a {
+        font-size: 24px;
         color: $dark;
 
         &:hover {
