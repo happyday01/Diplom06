@@ -24,7 +24,7 @@
                     <nuxt-link to="/"
                                class="navbar__link"
                     >
-                        <img src="/images/nav/homepage.svg"
+                        <img src="/static/images/nav/homepage_nav.svg"
                              alt=""
                         >
                         Главная
@@ -34,7 +34,7 @@
                     <nuxt-link to="/departments"
                                class="navbar__link"
                     >
-                        <img src="/images/nav/student.svg"
+                        <img src="/static/images/nav/student_nav.svg"
                              alt=""
                         >
                         Студентам
@@ -44,7 +44,7 @@
                     <nuxt-link to="/applicants"
                                class="navbar__link"
                     >
-                        <img src="/images/nav/backpack.svg"
+                        <img src="/static/images/nav/backpack_nav.svg"
                              alt=""
                         >
                         Абитуриентам
@@ -54,7 +54,7 @@
                     <nuxt-link to="/for-teacher"
                                class="navbar__link"
                     >
-                        <img src="/images/nav/speech.svg"
+                        <img src="/static/images/nav/speech_nav.svg"
                              alt=""
                         >
                         Преподавателям
