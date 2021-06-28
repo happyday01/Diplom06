@@ -8,8 +8,15 @@ export default {
             { hid: 'description', name: 'description', content: '' },
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'stylesheet', href 'https://fonts.cdnfonts.com/css/malgun-gothic-boot' },
+            { 
+                rel: 'icon', 
+                type: 'image/x-icon', 
+                href: '/favicon.ico' 
+            },
+            { 
+                rel: 'stylesheet', 
+                href 'https://fonts.cdnfonts.com/css/malgun-gothic-boot' 
+            },
         ],
     },
 
