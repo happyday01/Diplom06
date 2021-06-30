@@ -50,6 +50,10 @@ export default {
     color: white;
     height: 27%;
     padding: 1em;
+    @include media-breakpoint-down(sm){
+    margin-right: 0;
+    height: auto;
+    }
 }
 
 .department-card__show {
