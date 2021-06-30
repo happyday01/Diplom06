@@ -98,6 +98,9 @@ export default {
     background: $primary;
     padding: 15px;
     color: white;
+    @include media-breakpoint-down(xs) {
+    padding: 15px 0;
+    }
 }
 
 .calendar__content {
@@ -110,12 +113,26 @@ export default {
     @include media-breakpoint-down(md) {
         grid-gap: 5px;
     }
+    @include media-breakpoint-down(xs) {
+    grid-template-rows: auto 1fr;
+    grid-template-columns:none;
+    }
 }
 
 .calendar__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 10px;
+    
+    @include media-breakpoint-down(md) {
+        grid-gap: 0;
+        padding:0 0 0 15px;
+        place-items: center;
+        text-align: center;
+    }
+    @include media-breakpoint-down(xs) {
+        padding: 15px 15px 0;
+    }
 
     @include media-breakpoint-down(md) {
         grid-gap: 0;
@@ -155,13 +172,19 @@ export default {
 
 .calendar__month {
     margin: 0 15px;
+    @include media-breakpoint-down(xs) {
+    line-height: initial;
+    }
 
 }
 
 .calendar__date {
     font-size: 64px;
-    margin: 25px;
-    margin-top: -1px;
+    margin: -1px 25px 25px;
+    @include media-breakpoint-down(xs) {
+    font-size: 52px;
+    margin: 0 15px 15px;
+    }
 }
 
 .calendar__date-wrap {
@@ -176,6 +199,13 @@ export default {
     font-size: 28px;
     @include media-breakpoint-down(md) {
         margin-left: -25px;
+    }
+    @include media-breakpoint-down(xs) {
+        margin-left: 0;
+        padding: 15px;
+        &:before {
+            content: none;
+        }
     }
 
     &:before {
