@@ -52,5 +52,8 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 30px;
+    @include media-breakpoint-down(xs) {
+    grid-template-columns: auto;
+    }
 }
 </style>
