@@ -85,6 +85,9 @@ export default {
     overflow: hidden;
     position: relative;
     margin: 0 0 10px;
+    @include media-breakpoint-down(xs) {
+    flex-direction: column
+    }
 }
 
 .tabs__title {
@@ -108,6 +111,9 @@ export default {
     border-right: 1px solid $primary;
     color: $dark;
     white-space: nowrap;
+    @include media-breakpoint-down(xs) {
+    border-right: none;    
+    }
 
     &:last-child {
         border-right: none;
