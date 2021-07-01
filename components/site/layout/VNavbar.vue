@@ -86,6 +86,8 @@ export default {
     mounted() {
         this.d_navList = document.querySelector('.navbar__list');
         this.d_navContainer = document.querySelector('.navbar__container');
+        this.d_menuIsActive = false;
+        this.setNavListTopValue();
     },
     methods: {
         expandNavbar() {
