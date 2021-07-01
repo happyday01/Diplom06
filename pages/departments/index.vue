@@ -114,5 +114,9 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    @include media-breakpoint-down(xs) {
+        grid-template-columns: auto;
+        margin-bottom: 50px;
+    }
 }
 </style>
