@@ -52,7 +52,7 @@
                 Всемирная инициатива CDIO
             </h2>
             <div class="row align-items-center mb-4">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-7 mb-4 mb-md-0">
                     <img src="/images/for-teacher/CDIOVector.svg"
                          alt=""
                     >
